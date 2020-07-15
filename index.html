@@ -67,7 +67,7 @@
             </div>
           </div>
           <div class="tag_desc">
-            <h4>축약형</h4>
+            <h4>상단 두 속성 축약형</h4>
             <code class="in-code">
               grid-template: repeat(3,1fr)/ 2fr 2fr 2fr<br />
               grid-template: "hd hd hd" 100px
@@ -101,6 +101,49 @@
               2개이상이 들어갈 땐 n번째로 반복된<br />
               예제를 보면 2n은 50px, 2n-1은 50px의 높이를 가지고, <br />
               2n의 너비는 1fr, 2n-1의 너비는 2fr이 된다
+            </div>
+          </div>
+          <div class="tag_desc">
+            <h4>전체 축약형</h4>
+            <code class="in-code">
+              grid: 1fr / 1fr;
+            </code>
+            <div class="in-desc">
+              grid-auto-~, grid-template-~전체를 아우르는 축약형 속성
+            </div>
+          </div>
+        </li>
+        <li class="tag_list">
+          <h3>간격</h3>
+          <div class="tag_desc">
+            <h4>줄 사이 간격</h4>
+            <code class="in-code">
+              grid-row-gap: 10px;<br />
+              row-gap: 10px;
+            </code>
+            <div class="in-desc">
+              줄과 줄 사이에 여백을 줄 때 사용
+            </div>
+          </div>
+          <div class="tag_desc">
+            <h4>칸 사이 간격</h4>
+            <code class="in-code">
+              grid-column-gap: 10px;<br />
+              column-gap: 20px;
+            </code>
+            <div class="in-desc">
+              칸과 칸 사이에 여백을 줄 때 사용
+            </div>
+          </div>
+          <div class="tag_desc">
+            <h4>축약형</h4>
+            <code class="in-code">
+              grid-gap: 10px, 20px;<br />
+              gap: 10px, 20px;
+            </code>
+            <div class="in-desc">
+              줄사이간격, 칸사이간격 순으로 작성<br />
+              줄끼리는 10px, 칸끼리는 20px 띄움
             </div>
           </div>
         </li>
