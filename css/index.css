@@ -2,6 +2,12 @@
 .display_none {
   display: none;
 }
+.sound_only {
+  font-size: 0px;
+  position: absolute;
+  top: 0px;
+  left: -9999rem;
+}
 .wrapper {
   max-width: 1000px;
   margin: 0px auto;
@@ -10,6 +16,16 @@
 .tag_list {
   margin: 10px 0px;
 }
-.desc-ie {
-  color: #009fff;
+.in-code {
+  display: block;
+  margin: 5px auto;
+  padding: 10px;
+  background-color: #282828;
+  color: white;
+}
+.desc-ie .in-code {
+  color: #00aeff;
+}
+.ie-wrapper .desc-ie .in-code {
+  color: #00e1ff;
 }
