@@ -29,3 +29,9 @@
 .ie-wrapper .desc-ie .in-code {
   color: #00e1ff;
 }
+
+@media all and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}

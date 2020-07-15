@@ -167,8 +167,90 @@
           </div>
         </li>
         <li class="tag_list">
-
+          <h3>정렬</h3>
+          <div class="tag_desc">
+            <h4>아이템영역 수직정렬</h4>
+            <code class="in-code">
+              align-content: start;
+            </code>
+            <div class="in-desc">
+              아이템 영역의 정렬을 지정<br />
+              속성값<br />
+              start: 시작점에<br />
+              center: 가운데에<br />
+              end: 끝에<br />
+              stretch: 컨테이너를 채우게 늘림<br />
+              space-between: 양끝에 배치하고, 가운데 컨텐츠들은 여백을 균일하게<br />
+              space-around: 아이템간의 여백을 균일하게<br />
+              space-evenly: 전체 여백을 균일하게 배치
+            </div>
+          </div>
         </li>
+        <li class="tag_list">
+          <h3>정렬</h3>
+          <div class="tag_desc">
+            <h4>아이템영역 수평정렬</h4>
+            <code class="in-code">
+              justify-content: start;
+            </code>
+            <div class="in-desc">
+              아이템 영역의 정렬을 지정<br />
+              속성값<br />
+              start: 시작점에<br />
+              center: 가운데에<br />
+              end: 끝에<br />
+              stretch: 컨테이너를 채우게 늘림<br />
+              space-between: 양끝에 배치하고, 가운데 컨텐츠들은 여백을 균일하게<br />
+              space-around: 아이템간의 여백을 균일하게<br />
+              space-evenly: 전체 여백을 균일하게 배치
+            </div>
+          </div>
+          <div class="tag_desc">
+            <h4>축약형</h4>
+            <code class="in-code">
+              place-content: center space-between;<br />
+              place-content: center;
+            </code>
+            <div class="in-desc">
+              두 정렬 방법이 같다면, 속성값은 1개가 온다.<br />
+              place-content: align-content justify-content;
+            </div>
+          </div>
+        </li>
+        <li class="tag_list">
+          <h3>아이템내부 정렬</h3>
+          <div class="tag_desc">
+            <h4>세로정렬</h4>
+            <code class="in-code">
+              align-items: start;
+            </code>
+            <div class="in-desc">
+              영역내 아이템의 세로를 정의함.<br />
+              속성값: stretch, start, center, end
+            </div>
+          </div>
+          <div class="tag_desc">
+            <h4>가로정렬</h4>
+            <code class="in-code">
+              justify-items: start;
+            </code>
+            <div class="in-desc">
+              영역내 아이템의 가로를 정의함.<br />
+              속성값: stretch, start, center, end
+            </div>
+          </div>
+        </li>
+        <div class="tag_desc">
+          <h4>축약형</h4>
+          <code class="in-code">
+            place-items: start;<br />
+            place-items: center start;
+          </code>
+          <div class="in-desc">
+            place-items: align-items justify-items;<br />
+            하나만 적으면 두 속성이 하나로 적용됨
+          </div>
+        </div>
       </ul>
     </section>
     <section class="ie-wrapper">
