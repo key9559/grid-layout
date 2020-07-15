@@ -15,58 +15,93 @@
       <ul class="tag_list_wrap">
         <li class="tag_list">
           <h3>그리드</h3>
-          <code>
-            display: grid;<br />
-            display: inline-grid;
-          </code>
-          <div class="in-desc">
-            <span class="_desc">
-              컨테이너를 그리드로 만들어주는 속성.
-            </span><br />
-            <span class="desc-ie">
-              익스플로러 호환가능<br />
-              <code>display: -ms-grid;</code>
-            </span>
+          <div class="tag_desc">
+            <h4>그리드 레이아웃 선언</h4>
+            <code>
+              display: grid;<br />
+              display: inline-grid;
+            </code>
+            <div class="in-desc">
+              <span class="_desc">
+                컨테이너를 그리드로 만들어주는 속성.
+              </span><br />
+              <span class="desc-ie">
+                익스플로러 호환가능<br />
+                <code>display: -ms-grid;</code>
+              </span>
+            </div>
           </div>
         </li>
         <li class="tag_list">
           <h3>높이/너비설정</h3>
-          <h4>높이</h4>
-          <code>
-            grid-template-row: 00px;<br />
-            grid-template-row: 1fr 3fr;
-          </code>
-          <div class="in-desc">
-            <span class="_desc">items의 줄 높이 지정</span><br />
-            <span class="desc-ie">
-              익스플로러 호환가능<br />
-              <code>
-                -ms-grid-rows: 1fr 3fr;<br />
-                -ms-grid-rows: 10px 40px;
-              </code>
-            </span>
+          <div class="tag_desc">
+            <h4>높이</h4>
+            <code>
+              grid-template-row: 00px;<br />
+              grid-template-row: 1fr 3fr;
+            </code>
+            <div class="in-desc">
+              <span class="_desc">items의 줄 높이 지정</span><br />
+              <span class="desc-ie">
+                익스플로러 호환가능<br />
+                <code>
+                  -ms-grid-rows: 1fr 3fr;<br />
+                  -ms-grid-rows: 10px 40px;
+                </code>
+              </span>
+            </div>
           </div>
-          <h4>너비</h4>
-          <code>
-            grid-template-columns: repeat(n,minmax(10% ayto));
-          </code>
-          <div class="in-desc">
-            <span class="_desc">items의 줄 너비 지정</span><br />
-            <span class="desc-ie">
-              익스플로러 호환가능<br />
-              <code>
-                -ms-grid-columns: 1fr 3fr;
-              </code>
-            </span>
+          <div class="tag_desc">
+            <h4>너비</h4>
+            <code>
+              grid-template-columns: repeat(n,minmax(10% ayto));
+            </code>
+            <div class="in-desc">
+              <span class="_desc">items의 줄 너비 지정</span><br />
+              <span class="desc-ie">
+                익스플로러 호환가능<br />
+                <code>
+                  -ms-grid-columns: 1fr 3fr;
+                </code>
+              </span>
+            </div>
           </div>
-          <h4>축약형</h4>
-          <code>
-            grid-template: repeat(3,1fr)/ 2fr 2fr 2fr<br />
-            grid-template: "hd hd hd" 100px
-          </code>
-          <div class="in-desc">
-            작성은 줄/칸<br />
-            아랫줄은 hd 3칸, 너비 100px
+          <div class="tag_desc">
+            <h4>축약형</h4>
+            <code>
+              grid-template: repeat(3,1fr)/ 2fr 2fr 2fr<br />
+              grid-template: "hd hd hd" 100px
+            </code>
+            <div class="in-desc">
+              작성은 줄/칸<br />
+              아랫줄은 hd 3칸, 너비 100px
+            </div>
+          </div>
+          <div class="tag_desc">
+            <h4>이름으로 영역 생성</h4>
+            <code>
+              grid-template-area: "hd hdside hd" "main main side" "ft . ft"
+            </code>
+            <div class="in-desc">
+              아이템에 이름을 부여하여 제어하는 속성.<br />
+              .은 빈 공간이며, 각 이름을 item에 grid-area를 사용하여 부여해야 제어 가능
+            </div>
+          </div>
+          <div class="tag_desc">
+            <h4>오토 조정</h4>
+            <code>
+              grid-auto-rows: 100px;<br />
+              grid-auto-rows: 100px 50px;<br />
+              grid-auto-columns: 100px;<br />
+              grid-auto-columns: 1fr 2fr;
+            </code>
+            <div class="in-desc">
+              줄 혹은 칸 수를 미리 정할 수 없을 때 사용.<br />
+              수의 지정없이 높이 혹은 너비를 지정할 수 있음<br />
+              2개이상이 들어갈 땐 n번째로 반복된<br />
+              예제를 보면 2n은 50px, 2n-1은 50px의 높이를 가지고, <br />
+              2n의 너비는 1fr, 2n-1의 너비는 2fr이 된다
+            </div>
           </div>
         </li>
       </ul>
@@ -76,44 +111,51 @@
       <ul class="tag_list_wrap">
         <li class="tag_list">
           <h3>그리드</h3>
-          <code>
-            display: grid;<br />
-            display: inline-grid;
-          </code>
-          <div class="in-desc">
-            <span class="desc-ie">
-              <code>
-                display: -ms-grid;<br />
-              display: -ms-inline-gird;
-              </code>
-            </span>
+          <div class="tag_desc">
+            <h4>그리드레이아웃 선언</h4>
+            <code>
+              display: grid;<br />
+              display: inline-grid;
+            </code>
+            <div class="in-desc">
+              <span class="desc-ie">
+                <code>
+                  display: -ms-grid;<br />
+                display: -ms-inline-gird;
+                </code>
+              </span>
+            </div>
           </div>
         </li>
         <li class="tag_list">
           <h3>높이/너비설정</h3>
-          <h4>높이</h4>
-          <code>
-            grid-template-row: 00px;<br />
-            grid-template-row: 1fr 3fr;
-          </code>
-          <div class="in-desc">
-            <span class="desc-ie">
-              <code>
-                -ms-grid-rows: 1fr 3fr;<br />
-                -ms-grid-rows: 10px 40px;
-              </code>
-            </span>
+          <div class="tag_desc">
+            <h4>높이</h4>
+            <code>
+              grid-template-row: 00px;<br />
+              grid-template-row: 1fr 3fr;
+            </code>
+            <div class="in-desc">
+              <span class="desc-ie">
+                <code>
+                  -ms-grid-rows: 1fr 3fr;<br />
+                  -ms-grid-rows: 10px 40px;
+                </code>
+              </span>
+            </div>
           </div>
-          <h4>너비</h4>
-          <code>
-            grid-template-columns: repeat(n,minmax(10% ayto));
-          </code>
-          <div class="in-desc">
-            <span class="desc-ie">
-              <code>
-                -ms-grid-columns: 1fr 3fr;
-              </code>
-            </span>
+          <div class="tag_desc">
+            <h4>너비</h4>
+            <code>
+              grid-template-columns: repeat(n,minmax(10% ayto));
+            </code>
+            <div class="in-desc">
+              <span class="desc-ie">
+                <code>
+                  -ms-grid-columns: 1fr 3fr;
+                </code>
+              </span>
+            </div>
           </div>
         </li>
       </ul>
